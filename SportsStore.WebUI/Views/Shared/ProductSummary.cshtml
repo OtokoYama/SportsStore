@@ -1,0 +1,13 @@
+﻿@* THIS IS A PARTIAL VIEW *@
+@* A paritial view is similar to a regular view, except that it produces a fragment of HTML, rather then a full HTML document.*@
+
+@model SportsStore.Domain.Entities.Product
+
+<div class="well">
+    <h3>
+        <strong>@Model.Name</strong>
+        <span class="pull-right label label-primary">@Model.Price.ToString("c")</span>
+    </h3>
+    <span>@Model.Description</span>
+</div>
+
