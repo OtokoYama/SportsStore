@@ -8,7 +8,7 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar navbar-inverse" role="navigation">
             <a class="navbar-brand" href="#">SPORTS STORE</a>
         </div>
@@ -16,12 +16,12 @@
         <div class="row panel">
             <div id="categories" class="col-xs-3">
                 @Html.Action("Menu", "Nav")
-        </div>
+            </div>
 
-        <div class="col-xs-8">
-            @RenderBody()
+            <div class="col-xs-8">
+                @RenderBody()
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
